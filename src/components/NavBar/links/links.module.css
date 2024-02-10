@@ -1,0 +1,57 @@
+.links{
+    display: flex;
+    gap: 10px;
+}
+
+
+.logout{
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.menu{
+    
+    display: none;
+
+}
+
+.btn{
+    display: none;
+}
+
+
+@media (max-width:768px)  {
+
+    .btn{
+        display: block;
+        cursor: pointer;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .menu{
+    
+        position: absolute;
+        top: 100px;
+        right:0;
+        width: 50%;
+        height: calc(100vh - 100px);
+        background-color: wheat;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    
+    }
+    .links{
+        display: none;
+    }
+    
+}
+
+@media (max-width:420px){
+    .menu{
+        height: cal(100vh - 120px);
+    }
+}
