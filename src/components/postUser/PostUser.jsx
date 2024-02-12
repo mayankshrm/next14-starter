@@ -1,6 +1,6 @@
 
 import { getUser } from "@/lib/data";
-import styles from "./postUser.module.css";
+import styles from "./PostUser.module.css";
 import Image from "next/image";
 
 // FETCH DATA WITH AN API
