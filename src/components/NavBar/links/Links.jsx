@@ -34,6 +34,9 @@ function Links({session}) {
     setOpen(!open);
   }
 
+  const fnx=()=>{
+    setOpen(!open);
+  }
   return (
     <div className={styles.container}>
 
@@ -65,9 +68,9 @@ function Links({session}) {
         onClick={() => setOpen((prev) => !prev)}
       />
         { open && 
-    <div className={styles.menu}>
+    <div  onClick={() => setOpen((prev) => !prev)} className={styles.menu}>
         {mi.map((item)=>(
-        <NavLink item={item} key={item.title}/>
+        <NavLink  item={item} key={item.title}/>
        ) )}
 
 
@@ -81,7 +84,7 @@ function Links({session}) {
           </form>
         </>
       ) : (
-        <NavLink item={{ path: "/login", title: "login" }} />
+        <NavLink onClick={() => setOpen((prev) => !prev)} item={{ path: "/login", title: "login" }} />
       )}
     </div>
        
