@@ -8,6 +8,7 @@
     padding: 10px;
     font-weight: bold;
     cursor: pointer;
+    z-index: 100;
 }
 
 .menu{
