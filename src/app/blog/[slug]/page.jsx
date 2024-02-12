@@ -46,7 +46,7 @@ const SinglePostPage = async ({ params }) => {
         </div>
      
       <div className={styles.textContainer}>
-        <h1 className={styles.title}>{data.title}</h1>
+        <h1 className={styles.title}>{data?.title}</h1>
         <div className={styles.detail}>
 
             <Suspense fallback={<div>...loading</div>}>

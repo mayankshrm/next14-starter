@@ -4,8 +4,9 @@ import { handleGithub } from "@/lib/action";
 import styles from "./login.module.css";
 import LoginForm from "@/components/loginForm/LoginForm";
 
-const LoginPage = () => {
 
+const LoginPage = () => {
+      
   return (
     <div className={styles.container}>
       <div className={styles.wrapper}>

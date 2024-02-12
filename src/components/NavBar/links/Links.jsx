@@ -24,11 +24,11 @@ function Links({session}) {
     },
     {
       path: "/blog",
-      title: "bloge",
+      title: "blog",
     },
   ];
 
-  const isAdmin = true;
+  
   const [open,setOpen]=useState(false);
   const openfn=()=>{
     setOpen(!open);
