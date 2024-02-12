@@ -30,13 +30,13 @@
         font-weight: bold;
     }
     .menu{
-    
+            z-index: 100;
         position: absolute;
         top: 100px;
         right:0;
         width: 50%;
         height: calc(100vh - 100px);
-        background-color: wheat;
+        background-color:var(--bgsoft);
         display: flex;
         flex-direction: column;
         align-items: center;

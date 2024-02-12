@@ -68,12 +68,12 @@ a{
 
 @media (max-width:640px){
     .container{
-        width: 475px;
+        width: 400px;
     }
 
 }
-@media (max-width:475){
+@media (max-width:380px){
     .container{
-        width:320px ;
+        width:370px ;
     }
 }

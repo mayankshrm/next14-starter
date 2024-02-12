@@ -69,7 +69,23 @@ function Links({session}) {
         {mi.map((item)=>(
         <NavLink item={item} key={item.title}/>
        ) )}
+
+
+       {session ? (
+        <>
+          {session.user?.isAdmin && <NavLink item={{ path: "/admin", title: "admin" }} />}
+
+          <form  action={handleLogout}>  
+          <button className={styles.logout}>Logout</button>
+
+          </form>
+        </>
+      ) : (
+        <NavLink item={{ path: "/login", title: "login" }} />
+      )}
     </div>
+       
+       
         }
 
     </div>

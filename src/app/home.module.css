@@ -69,3 +69,14 @@
       width: 100%;
     }
   }
+
+  @media (max-width:625px){
+    .imgContainer{
+      display: none;
+    }
+
+    .brands{
+      top: 30px;
+     left: 30px;
+    }
+  }
