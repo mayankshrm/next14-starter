@@ -68,9 +68,9 @@ function Links({session}) {
         onClick={() => setOpen((prev) => !prev)}
       />
         { open && 
-    <div   className={styles.menu}>
+    <div  className={styles.menu}>
         {mi.map((item)=>(
-        <NavLink  onClick={() => setOpen((prev) => !prev)} item={item} key={item.title}/>
+        <NavLink  item={item} key={item.title}/>
        ) )}
 
 
